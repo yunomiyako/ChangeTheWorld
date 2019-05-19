@@ -100,6 +100,13 @@ export default {
           this.githubUrl , 
           this.otherUrl,
           () => {
+            this.title = "" 
+            this.mainText = "" 
+            this.needsStr = "" 
+            this.slackUrl = "" 
+            this.twitterUrl = "" 
+            this.githubUrl = "" 
+            this.otherUrl = "" 
             this.$emit("reloadRequest")
           }
         )

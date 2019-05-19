@@ -14,7 +14,6 @@
 <script>
 import { PropType } from 'vue'
 import Card from './Card.vue'
-import RecruitData from "../../dataClass/RecruitData.js"
 import TimelineListRequest from "../../api/TimelineListRequest.js"
 
 export default {

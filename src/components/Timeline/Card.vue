@@ -4,9 +4,10 @@
     color="#26c6da"
     dark
     max-width="400"
-    @click="onClickCard"
   >
-    <v-card-title>
+    <v-card-title 
+    class="card-title"
+    @click="onClickTitle">
       <span class="title font-weight-light">{{title}}</span>
     </v-card-title>
 
@@ -47,8 +48,8 @@ export default {
         sns : Object
     },
     methods : {
-        onClickCard : function(){
-            this.detailed = true
+        onClickTitle : function() {
+          this.detailed = !this.detailed
         }
     } , 
     components : {Chips, CardDetail, SNSList}
@@ -56,6 +57,9 @@ export default {
 </script>
 
 <style scoped>
+.card-title {
+  cursor: pointer;
+}
 .bounce-enter-active {
   animation: bounce-in .5s;
 }
