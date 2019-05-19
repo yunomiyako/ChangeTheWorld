@@ -26,15 +26,15 @@
             </div>
 
             <div v-if="githubUrl">
-                <v-list-tile @click="onClickGithub(githubUrl)">
-                    <v-list-tile-action>
-                        <img class="icon" src="../../assets/GitHub-Mark-Light-120px-plus.png">
-                    </v-list-tile-action>
+                    <v-list-tile @click="onClickGithub(githubUrl)">
+                        <v-list-tile-action>
+                            <img class="icon" src="../../assets/GitHub-Mark-Light-120px-plus.png">
+                        </v-list-tile-action>
 
-                    <v-list-tile-content>
-                    <v-list-tile-title>Github</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
+                        <v-list-tile-content>
+                        <v-list-tile-title>Github</v-list-tile-title>
+                        </v-list-tile-content>
+                    </v-list-tile>
             </div>
 
             <div v-if="otherUrl">
@@ -73,6 +73,10 @@ export default {
 </script>
 
 <style scoped>
+.link-text {
+    text-decoration:none;
+    color : white;
+}
 .icon {
     width : 50px;
     height : 50px;
